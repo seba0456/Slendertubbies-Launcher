@@ -12,7 +12,7 @@
     <Copyright>seba0456</Copyright>
     <PackageProjectUrl>https://seba0456.itch.io/slendertubbies</PackageProjectUrl>
     <Product>Play Slendertubbies</Product>
-    <RepositoryUrl>https://github.com/seba0456/Slendertubbies-Updater</RepositoryUrl>
+    <RepositoryUrl>https://github.com/seba0456/Slendertubbies-Launcher</RepositoryUrl>
     <Description>This program is designed to help users download, update, and launch the Slendertubbies game on their computer. The program requires the installation of dotnet-sdk-6.0.407-win-x64.exe if the game cannot be launched. The system requirements for this program include at least 14 GB of free hard disk space and Windows 10 or 11. After launching the program (SlendertubbiesChecker.exe), the game will be automatically downloaded and updated as needed, and then launched automatically.</Description>
     <AssemblyName>PlaySlendertubbies</AssemblyName>
   </PropertyGroup>
