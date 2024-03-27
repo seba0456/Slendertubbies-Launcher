@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyVersion>1.4.1</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <Version>$(AssemblyVersion)</Version>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>launcher_icon.ico</ApplicationIcon>
+    <Copyright>seba0456</Copyright>
+    <PackageProjectUrl>https://seba0456.itch.io/slendertubbies</PackageProjectUrl>
+    <Product>Play Slendertubbies</Product>
+    <RepositoryUrl>https://github.com/seba0456/Slendertubbies-Updater</RepositoryUrl>
+    <Description>This program is designed to help users download, update, and launch the Slendertubbies game on their computer. The program requires the installation of dotnet-sdk-6.0.407-win-x64.exe if the game cannot be launched. The system requirements for this program include at least 14 GB of free hard disk space and Windows 10 or 11. After launching the program (SlendertubbiesChecker.exe), the game will be automatically downloaded and updated as needed, and then launched automatically.</Description>
+    <AssemblyName>PlaySlendertubbies</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AplicationWindows\check_icon.png" />
+    <None Remove="Functions\start.bat" />
+    <None Remove="Images\check_icon.png" />
+    <None Remove="Images\update_icon.png" />
+    <None Remove="Images\x_icon.png" />
+    <None Remove="multiplayer_Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="launcher_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="AplicationWindows\check_icon.png" />
+    <Resource Include="Images\check_icon.png" />
+    <Resource Include="Images\multiplayer_Icon.png" />
+    <Resource Include="Images\update_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\x_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="launcher_config.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+</Project>
